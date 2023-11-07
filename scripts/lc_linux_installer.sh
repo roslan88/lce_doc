@@ -86,7 +86,7 @@ chmod 500 /etc/init.d/${LAUNCHER_SCRIPT_NAME}
 if command -v update-rc.d; then
   update-rc.d ${LAUNCHER_SCRIPT_NAME} defaults
 else
-  chkconfig ${LAUNCHER_SCRIPT_NAME} on
+  /usr/sbin/chkconfig ${LAUNCHER_SCRIPT_NAME} on
 fi
 
 # Start the service.
